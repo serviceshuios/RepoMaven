@@ -1,5 +1,7 @@
 package dao;
 
+import java.util.List;
+
 import metier.Client;
 /**
  * interface DAO
@@ -9,5 +11,6 @@ import metier.Client;
 public interface IDao {
 
 	public long addClient(Client c);
+	public List<Client> findAll();
 
 }

@@ -5,6 +5,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.List;
 
 import metier.Client;
 
@@ -36,6 +37,12 @@ public class Dao implements IDao {
 			e.printStackTrace();
 		}
 		return c.getId();
+	}
+
+	@Override
+	public List<Client> findAll() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
